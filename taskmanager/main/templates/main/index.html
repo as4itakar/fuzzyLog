@@ -1,0 +1,69 @@
+<!doctype html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}" type="text/css">
+</head>
+<body style="background-image: url({% static 'img/pic1.jpg' %})">
+    <form method="post" action="res" class="main-form">
+        {% csrf_token %}
+        <div class="main-price">
+            <label for="price">Вам важна цена атомобиля?</label>
+            <hr>
+            <select class="price" name="price" id="price">
+                <option value="Важна">Важна</option>
+                <option value="Не важна">Не важна</option>
+                <option value="Без разницы">Без разницы</option>
+            </select>
+        </div>
+        <div class="main-price">
+            <label for="speed">Вам важно чтоб машина была быстрой?</label><hr>
+            <select class="price" name="speed" id="speed">
+                <option value="Важно">Важно</option>
+                <option value="Не важно">Не важно</option>
+                <option value="Без разницы">Без разницы</option>
+            </select>
+        </div>
+        <div class="main-price">
+            <label for="family">Вам важно чтоб машина была вместительной?</label><hr>
+            <select class="price" name="family" id="family">
+                <option value="Важно">Важно</option>
+                <option value="Не важно">Не важно</option>
+                <option value="Без разницы">Без разницы</option>
+            </select>
+        </div>
+        <div class="main-price">
+            <label for="beauty">Вас волнует внешний вид вашей машины?</label><hr>
+            <select class="price" name="beauty" id="beauty">
+                <option value="Важно">Важно</option>
+                <option value="Не важно">Не важно</option>
+                <option value="Без разницы">Без разницы</option>
+            </select>
+        </div>
+        <div class="main-price">
+            <label for="comfort">Вам важно чтоб машина была комфортной в управлении?</label><hr>
+            <select class="price" name="comfort" id="comfort">
+                <option value="Важно">Важно</option>
+                <option value="Не важно">Не важно</option>
+                <option value="Без разницы">Без разницы</option>
+            </select>
+        </div>
+        <div class="main-price">
+            <label for="salon">Вам важен внешний вид салона машины?</label><hr>
+            <select class="price" name="salon" id="salon">
+                <option value="Важен">Важен</option>
+                <option value="Не важен">Не важен</option>
+                <option value="Без разницы">Без разницы</option>
+            </select>
+        </div>
+        <div class="btn">
+            <button class="main-btn">Результат</button>
+        </div>
+    </form>
+</body>
+</html>

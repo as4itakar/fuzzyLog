@@ -1,0 +1,116 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+.main-form{
+    width: 40%;
+    height: auto;
+    margin: 10px auto;
+    background-color: rgba(0,0,0,.8);
+    border: 9px solid rgba(255, 255, 255, .9);
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px #ccc;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: grid
+}
+
+.main-form label{
+    font-size: 20px;
+    color: white;
+    outline: none;
+}
+
+.main-form select{
+    border: 2px solid rgba(255, 255, 255, .9);
+    border-radius: 1rem;
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    padding: 8px 30px;
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-label{
+    color:white;
+    height: 45px;
+    margin: 20px 30px;
+    padding: 0 130px;
+}
+
+.main-label h5{
+    height: 100%;
+    width: 100%;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-price{
+    margin-left: 40px;
+    padding: 15px 5px;
+    outline: none;
+}
+
+.btn{
+    height: 45px;
+    margin: 20px 30px;
+
+}
+
+.main-btn{
+    border: 2px solid rgba(255, 255, 255, .9);
+    border-radius: 1rem;
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    padding: 8px 30px;
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-btn:focus{
+    border: 2px solid rgba(255,182,193, .9);
+}
+
+.main-form select:focus{
+    border: 2px solid rgba(255,182,193, .9);
+}
+
+.main-btn:hover{
+    border: 2px solid rgba(255,182,193, .7);
+}
+
+.main-form select:hover{
+    border: 2px solid rgba(255,182,193, .7);
+}
+
+.main-form:hover{
+    border: 9px solid rgba(255,182,193, .9);
+
+}
+
+.image-car{
+    margin: 40px auto;
+    border-radius: 10px;
+    border: 3px solid rgba(255,255,255,0.7);
+
+}
+
+.main-label h5{
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
